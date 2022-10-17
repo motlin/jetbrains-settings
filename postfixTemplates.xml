@@ -1,0 +1,34 @@
+<application>
+  <component name="PostfixTemplates">
+    <template id="adaptarray@userDefined" key=".adapt" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions>
+        <condition id="array" />
+      </conditions>
+      <template name="fakeKey" value="org.eclipse.collections.impl.list.fixed.ArrayAdapter.adapt($EXPR$)" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="adaptmap@userDefined" key=".adapt" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions>
+        <condition id="fqn" fqn="java.util.Map" />
+      </conditions>
+      <template name="fakeKey" value="org.eclipse.collections.impl.map.mutable.MapAdapter.adapt($EXPR$)" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="adapt@userDefined2" key=".adapt" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions>
+        <condition id="fqn" fqn="java.util.Set" />
+      </conditions>
+      <template name="fakeKey" value="org.eclipse.collections.impl.set.mutable.SetAdapter.adapt($EXPR$)" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="adaptlist@userDefined" key=".adapt" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions>
+        <condition id="fqn" fqn="java.util.List" />
+      </conditions>
+      <template name="fakeKey" value="org.eclipse.collections.impl.list.mutable.ListAdapter.adapt($EXPR$)" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="rethrow@userDefined" key=".rethrow" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions>
+        <condition id="fqn" fqn="java.lang.Exception" />
+      </conditions>
+      <template name="fakeKey" value="throw new RuntimeException($EXPR$);" toReformat="true" toShortenFQNames="true" />
+    </template>
+  </component>
+</application>
