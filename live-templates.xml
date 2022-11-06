@@ -1,0 +1,57 @@
+<template name="see" value="@see &lt;a href=&quot;$URL$&quot;&gt;$URL$&lt;/a&gt;" description="Add a Javadoc @see url" toReformat="false" toShortenFQNames="false">
+  <variable name="URL" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_COMMENT" value="true" />
+  </context>
+</template>
+<template name="todo" value="// TODO $date$: $END$" description="TODO with date" toReformat="false" toShortenFQNames="true">
+  <variable name="date" expression="date(&quot;yyyy-MM-dd&quot;)" defaultValue="" alwaysStopAt="false" />
+  <context>
+    <option name="COMPLETION" value="false" />
+    <option name="JAVA_CODE" value="true" />
+    <option name="JAVA_CONSUMER" value="false" />
+    <option name="JAVA_EXPRESSION" value="false" />
+  </context>
+</template>
+<template name="util" value="private $CLASS$()&#10;{&#10;    throw new AssertionError(&quot;Suppress default constructor for noninstantiability&quot;);&#10;}&#10;" description="Suppress default constructor for noninstantiability" toReformat="false" toShortenFQNames="true">
+  <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_DECLARATION" value="true" />
+  </context>
+</template>
+<template name="yet" value="throw new UnsupportedOperationException(this.getClass().getSimpleName() + &quot;.$METHOD$() not implemented yet&quot;);&#10;" description="not implemented yet (Unsupported)" toReformat="false" toShortenFQNames="true">
+  <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+  <context>
+    <option name="JAVA_STATEMENT" value="true" />
+  </context>
+</template>
+<template name="Log" value="private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger($CLASS$.class);" description="Slf4j Logger" toReformat="false" toShortenFQNames="true">
+  <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_DECLARATION" value="true" />
+  </context>
+</template>
+<template name="logv" value="$LOGGER$.info(&quot;$EXPR_COPY$ = {}&quot;, $EXPR$);" description="Logs a value to LOGGER.info" toReformat="true" toShortenFQNames="true">
+  <variable name="LOGGER" expression="variableOfType(&quot;Logger&quot;)" defaultValue="LOGGER" alwaysStopAt="true" />
+  <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+  <variable name="EXPR_COPY" expression="escapeString(EXPR)" defaultValue="" alwaysStopAt="false" />
+  <context>
+    <option name="JAVA_STATEMENT" value="true" />
+  </context>
+</template>
+<template name="Mark" value="private static final org.slf4j.Marker MARKER = org.slf4j.MarkerFactory.getMarker(&quot;$END$&quot;);" description="Slf4j Marker" toReformat="false" toShortenFQNames="true">
+  <context>
+    <option name="JAVA_DECLARATION" value="true" />
+  </context>
+</template>
+<template name="nn" value="java.util.Objects.requireNonNull($SELECTION$)" description="requireNonNull" toReformat="false" toShortenFQNames="true">
+  <context>
+    <option name="JAVA_EXPRESSION" value="true" />
+  </context>
+</template>
+<template name="x" value="try&#10;{&#10;    $SELECTION$&#10;}&#10;catch (RuntimeException e)&#10;{&#10;    throw e;&#10;}&#10;catch (Exception e)&#10;{&#10;    throw new RuntimeException(e);&#10;}&#10;" description="Exception to RuntimeException" toReformat="false" toShortenFQNames="true">
+  <context>
+    <option name="JAVA_EXPRESSION" value="true" />
+    <option name="JAVA_STATEMENT" value="true" />
+  </context>
+</template>
