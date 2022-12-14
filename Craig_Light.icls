@@ -1,14 +1,21 @@
 <scheme name="Craig Light" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2022-10-08T10:33:52</property>
+    <property name="created">2022-12-14T12:40:08</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2022.2.3.0.0</property>
-    <property name="modified">2022-10-08T10:34:58</property>
+    <property name="ideVersion">2022.2.4.0.0</property>
+    <property name="modified">2022-12-14T12:40:40</property>
     <property name="originalScheme">Craig Light</property>
   </metaInfo>
-  <option name="CONSOLE_FONT_NAME" value="JetBrains Mono" />
-  <option name="CONSOLE_FONT_SIZE" value="12" />
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="MesloLGS NF" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </console-font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </console-font>
+  <option name="CONSOLE_LIGATURES" value="true" />
   <option name="CONSOLE_LINE_SPACING" value="1.05" />
   <colors>
     <option name="CARET_ROW_COLOR" value="fcfaed" />
@@ -33,6 +40,8 @@
       </value>
     </option>
     <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA" />
+    <option name="ANTLRv4_RULENAME" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="ANTLRv4_TOKENNAME" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="aa0000" />
@@ -41,13 +50,15 @@
     <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="aa0000" />
+        <option name="EFFECT_COLOR" value="aa0000" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
         <option name="FOREGROUND" value="6dcc" />
         <option name="EFFECT_COLOR" value="6dcc" />
-        <option name="EFFECT_TYPE" value="1" />
+        <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="CUSTOM_KEYWORD1_ATTRIBUTES" baseAttributes="DEFAULT_KEYWORD" />
@@ -76,7 +87,6 @@
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
         <option name="FOREGROUND" value="8c8c8c" />
-        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_NAME">
@@ -97,8 +107,7 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="8c8c8c" />
-        <option name="FONT_TYPE" value="2" />
+        <option name="FOREGROUND" value="5a8c8c" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
@@ -110,7 +119,6 @@
     <option name="DEFAULT_DOC_COMMENT_TAG_VALUE">
       <value>
         <option name="FOREGROUND" value="3d3d3d" />
-        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_ENTITY">
@@ -156,7 +164,6 @@
     <option name="DEFAULT_LINE_COMMENT">
       <value>
         <option name="FOREGROUND" value="8c8c8c" />
-        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_LOCAL_VARIABLE">
@@ -227,6 +234,13 @@
       <value>
         <option name="BACKGROUND" value="c2d8f2" />
         <option name="ERROR_STRIPE_COLOR" value="b6d2f2" />
+      </value>
+    </option>
+    <option name="ENUM_NAME_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="aa0000" />
+        <option name="EFFECT_COLOR" value="871094" />
+        <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
     <option name="ERRORS_ATTRIBUTES">
@@ -476,6 +490,28 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="Scala Local variable">
+      <value>
+        <option name="FOREGROUND" value="aa00" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="Scala Predefined types">
+      <value>
+        <option name="FOREGROUND" value="33b3" />
+      </value>
+    </option>
+    <option name="Scala Template val">
+      <value>
+        <option name="FOREGROUND" value="871094" />
+      </value>
+    </option>
+    <option name="Scala Template var">
+      <value>
+        <option name="FOREGROUND" value="871094" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="7f0000" />
@@ -504,7 +540,7 @@
     </option>
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="7e8a" />
+        <option name="FOREGROUND" value="9e880d" />
       </value>
     </option>
     <option name="TYPO">

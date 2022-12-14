@@ -1,11 +1,34 @@
 <scheme name="Craig Dark" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2022-10-08T11:18:50</property>
+    <property name="created">2022-12-14T12:40:58</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2022.2.3.0.0</property>
-    <property name="modified">2022-10-08T11:19:06</property>
+    <property name="ideVersion">2022.2.4.0.0</property>
+    <property name="modified">2022-12-14T12:41:24</property>
     <property name="originalScheme">Craig Dark</property>
   </metaInfo>
+  <option name="LINE_SPACING" value="1.05" />
+  <font>
+    <option name="EDITOR_FONT_NAME" value="MesloLGS NF" />
+    <option name="EDITOR_FONT_SIZE" value="17" />
+  </font>
+  <font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="17" />
+  </font>
+  <option name="EDITOR_LIGATURES" value="true" />
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="MesloLGS NF" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </console-font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </console-font>
+  <option name="CONSOLE_LIGATURES" value="true" />
+  <colors>
+    <option name="CARET_ROW_COLOR" value="212121" />
+  </colors>
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
@@ -20,6 +43,8 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
+    <option name="ANTLRv4_RULENAME" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="ANTLRv4_TOKENNAME" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="dd4488" />
@@ -66,7 +91,7 @@
     </option>
     <option name="ERRORS_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="bc3f3c" />
+        <option name="BACKGROUND" value="4d0100" />
         <option name="ERROR_STRIPE_COLOR" value="9e2927" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
@@ -129,7 +154,7 @@
     </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="606060" />
+        <option name="BACKGROUND" value="2d2d2d" />
       </value>
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
@@ -153,13 +178,20 @@
     </option>
     <option name="TYPO">
       <value>
-        <option name="BACKGROUND" value="3b583d" />
+        <option name="BACKGROUND" value="e2c10" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="WARNING_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="3d3801" />
+        <option name="ERROR_STRIPE_COLOR" value="be9117" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="bc503c" />
+        <option name="BACKGROUND" value="6c2e22" />
       </value>
     </option>
   </attributes>
